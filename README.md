@@ -46,7 +46,7 @@ This project demonstrates core backend concepts such as authentication, database
 ## ⚙️ Installation & Setup
 
 - ```bash
-- git clone https://github.com/your-username/flask-todo-app.git
+- git clone https://github.com/Muskankr/flask-todo-app.git
 - cd flask-todo-app
 
 - python -m venv venv
