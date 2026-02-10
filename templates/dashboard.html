@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="title">📝 TODO App</h2>
+
+<form method="POST" action="/add" class="todo-form">
+    <input name="task" placeholder="Task name" required>
+    
+    <select name="priority">
+        <option>High</option>
+        <option selected>Medium</option>
+        <option>Low</option>
+    </select>
+
+    <input type="date" name="due_date">
+    <button>Add</button>
+</form>
+
+<h3>Tasks To Do</h3>
+
+{% for todo in todos %}
+<div class="card {% if todo.completed %}done{% endif %}">
+    <div>
+        <b>{{ todo.task }}</b>
+        <p>Priority: {{ todo.priority }}</p>
+        <p>Due: {{ todo.due_date or 'No date' }}</p>
+    </div>
+
+    <div class="actions">
+        <a href="/complete/{{ todo.id }}">✔</a>
+        <a href="/delete/{{ todo.id }}">🗑</a>
+    </div>
+</div>
+{% endfor %}
+
+<a class="logout" href="/logout">Logout</a>
+
+{% endblock %}

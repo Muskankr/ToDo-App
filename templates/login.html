@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="auth-title">Welcome Back 👋</h2>
+
+<form method="POST" class="auth-form">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+
+    <button class="auth-btn">Login</button>
+</form>
+
+<p class="auth-text">
+    New user? <a href="/register">Register</a>
+</p>
+
+{% endblock %}
+
+

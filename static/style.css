@@ -1,0 +1,162 @@
+body {
+    background: linear-gradient(120deg, #dbeafe, #f0f9ff);
+    font-family: system-ui;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    background: white;
+    padding: 20px;
+    margin: 60px auto;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+.title {
+    text-align: center;
+}
+
+.todo-form {
+    display: grid;
+    gap: 8px;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card {
+    background: #f9fafb;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.actions a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logout {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ---------- AUTH PAGES ---------- */
+
+.auth-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.auth-form input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.auth-btn {
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.auth-btn:hover {
+    background: #1e40af;
+}
+
+.auth-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-text a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+/* body {
+    background: #f2f4f8;
+    font-family: Arial;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+    padding: 8px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+} */
